@@ -9,9 +9,9 @@ requirements = []
 path = "contracts/supply-chain.clar"
 depends_on = []
 
-[repl]
-costs_version = 2
-parser_version = 2
+[contracts.product-certification]
+path = "contracts/product-certification.clar"
+depends_on = ["supply-chain"]
 
 [repl.analysis]
 passes = ["check_checker"]
